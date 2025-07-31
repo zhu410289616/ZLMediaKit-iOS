@@ -48,7 +48,11 @@ typedef enum {
     Success = 0//执行成功
 } ApiErr;
 
+extern const std::string kApiDebug;
 extern const std::string kSecret;
+extern const std::string kSnapRoot;
+extern const std::string kDefaultSnap;
+extern const std::string kDownloadRoot;
 }//namespace API
 
 class ApiRetException: public std::runtime_error {
